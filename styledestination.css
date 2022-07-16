@@ -1,0 +1,240 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+    --var-font-titulo:'Josefin Sans', sans-serif;
+    --var-font-corpo:'Alata', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("assets/destination/background-destination-desktop.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+/*Configurando o carrocel*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 10px 10px;
+}
+.menu-desktop{
+    
+    display: flex;
+    padding-left: 90px;
+    padding-top: 35px;
+    height: 100px;
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.232);
+}
+#logo {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.opções-menu{
+    list-style: none;    
+}
+.opções-menu:not(:last-child){
+    margin-right: 40px;
+    
+}
+.opções-menu a{
+    font-family: var(--var-font-titulo);
+    text-decoration: none;
+    color: white;
+    margin: auto auto;
+    font-size: 1.3rem;
+    font-weight: 100;
+    
+    
+}
+.opções-menu:hover{
+    border-bottom: solid 3px white;
+}
+/*Configurando o título superior*/
+.container-titulo-crew{
+    position: absolute;
+    left: 10%;
+    top: 22%;
+    display: flex;
+
+}
+.num-crew{
+    font-family: var(--var-font-titulo);
+    font-size: 2rem;
+    color: gray;
+    font-weight: 100;
+
+}
+.titulo-crew{
+    margin-left: 20px;
+    font-family: var(--var-font-titulo);
+    font-size: 2rem;
+    color: white;
+    font-weight: 100;
+}
+/*Configurando o carrocel*/
+.slider{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    overflow: hidden;
+    width: 1200px;
+    height: 500px;
+    
+}
+.slider input{
+    display: none;
+}
+.slides{
+    
+    display: flex;
+    width: 4800px;
+    height: 500px;
+}
+.slide-one, .slide{
+   
+    display: flex;
+}
+.container-texto-slide{
+    margin-left: 200px;
+    padding-top: 75px;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+}
+.container-texto-baixo{
+    padding-top: 20px;
+    border-top: solid 1px white;
+    display: flex;
+    justify-content: space-between;
+}
+.texto-baixo-direita{
+    position: relative;
+    right: 10%;
+}
+
+.container-texto-slide h2{
+    color: white;
+    font-size: 1.1rem;
+    font-family: var(--var-font-titulo);
+    margin-bottom: 30px;
+    text-align: left;
+    letter-spacing: 3px;
+    
+}
+.container-texto-slide .titulo-geral-slide{
+    color: white;
+    font-size: 6rem;
+    font-family: var(--var-font-titulo);
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 100;
+    
+}
+.container-texto-baixo h1{
+    color: white;
+    font-size: 3rem;
+    font-family: var(--var-font-titulo);
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 100;
+}
+.container-texto-slide p{
+    
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--var-font-titulo);
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 3px;
+
+}
+.slide-one img, .slide img{
+   position: relative;
+   top: 15%;
+    width: 400px;
+    height: 400px;
+}
+/*Configurando os botões do carrocel*/
+.menu-slide{
+    position: absolute;
+    margin-top: -502px;
+    right: 8%;
+    display: flex;
+    width: 500px;
+    
+    
+}
+.menu-botão{
+    font-family: var(--var-font-titulo);
+    font-size: 1.5rem;
+    color: white;
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+}
+.menu-botão:first-child{
+    width: 70px;
+}
+.menu-botão:not(:last-child){
+    margin-right: 70px;
+}
+.menu-botão:hover{
+    border-bottom: solid 1px white;
+}
+#radio1:checked ~ .slide-one{
+    margin-left: 0px;
+    transition: 0.5s;
+}
+#radio2:checked ~ .slide-one{
+    margin-left: -1200px;
+    transition: 0.5s;
+}
+#radio3:checked ~ .slide-one{
+    margin-left: -2400px;
+    transition: 0.5s;
+}
+#radio4:checked ~ .slide-one{
+    margin-left: -3600px;
+    transition: 0.5s;
+}
+/*Configurando para que os botões fiquem checados */
+.navigation-menu{
+    position: absolute;
+    margin-top: 23px;
+    right: 8%;
+    display: flex;
+    width: 500px;
+}
+
+.navigation-menu div{
+    
+    width: 80px;
+   
+}
+
+.navigation-menu div:not(:last-child){
+    margin-right: 70px;
+}
+
+#radio1:checked ~ .navigation-menu .auto-btn1{
+    border-bottom: solid 1px white;
+}
+#radio2:checked ~ .navigation-menu .auto-btn2{
+    border-bottom: solid 1px white;
+}
+#radio3:checked ~ .navigation-menu .auto-btn3{
+    border-bottom: solid 1px white;
+}
+#radio4:checked ~ .navigation-menu .auto-btn4{
+    border-bottom: solid 1px white;
+}
