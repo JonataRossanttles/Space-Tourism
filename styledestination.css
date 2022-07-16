@@ -223,7 +223,7 @@ nav{
 }
 
 .navigation-menu div:not(:last-child){
-    margin-right: 70px;
+    margin-right: 62px;
 }
 
 #radio1:checked ~ .navigation-menu .auto-btn1{
