@@ -59,8 +59,8 @@ nav{
     background-size: cover;
     width: 30px;
     height: 30px;
-    margin-top: 5%;
-    margin-right: 2%;
+    margin-top: 27px;
+    margin-right: 5%;
     cursor: pointer;
    
 }
@@ -132,6 +132,7 @@ nav{
 .slide-one, .slide{
    
     display: flex;
+    
 }
 
 .container-texto-slide{
@@ -175,6 +176,7 @@ nav{
     margin-left: 100px;
     width: 500px;
     height: 500px;
+    
 }
 
 /*Configurando os botões do carrocel*/
@@ -382,8 +384,8 @@ nav{
         display: block;
     }
     #logo{
-        margin-left: 0;
-        margin-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
     }
     .navegação{
         padding-bottom: 0;
@@ -446,6 +448,13 @@ nav{
 .titulo-crew,.num-crew{
     font-size: 1.5rem;
 }
+.slide-one img, .slide img{
+   
+    width: 340px;
+    height: 300px;
+    
+    
+   }
 
 
 }
