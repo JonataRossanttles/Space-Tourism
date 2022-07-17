@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylecrew.css">
     <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
-    <title>Crew Space Tourism</title>
+    <title> Crew Space Tourism</title>
 </head>
 <body>
 <nav class="navegação">
@@ -19,7 +19,15 @@
         <li class="opções-menu"> <a href="crew.html"> <strong> 02</strong>  Crew</a> </li>
         <li class="opções-menu">  <a href="techonology.html"> <strong>03</strong>  Technology</a> </li>
     </ul>
+    <div class="hamburguer"></div>
 </nav>
+<ul class="menu-mobile">
+    <li class="opções-menu"> <a href="index.html">  <strong> 00</strong> Home</a> </li>
+    <li class="opções-menu"> <a href="destination.html"> <strong> 01</strong>  Destination</a></li>
+    <li class="opções-menu"> <a href="crew.html"> <strong> 02</strong>  Crew</a> </li>
+    <li class="opções-menu">  <a href="techonology.html"> <strong>03</strong>  Technology</a> </li>
+</ul>
+
 <div class="container-titulo-crew">
 <h1 class="num-crew">02</h1> <h1 class="titulo-crew">  MEET YOUR CREW</h1>
 </div>
@@ -115,6 +123,28 @@ if (count>4){
 }
 document.getElementById("radio"+count).checked = true 
 
+}
+
+let hamburguer = document.getElementsByClassName("hamburguer")[0]
+let titulocrew= document.getElementsByClassName("container-titulo-crew")[0]
+let navmob = document.getElementsByClassName("menu-mobile")[0]
+let nav = document.getElementsByTagName("nav")[0]
+hamburguer.addEventListener("click",mostrar)
+
+
+function mostrar(){
+    if (hamburguer.classList.contains("plano")){
+        hamburguer.classList.remove('plano')
+        titulocrew.classList.remove('ocultar')
+        navmob.classList.remove('mostrar')
+        nav.classList.remove('plano-nav')
+
+    }else{
+        hamburguer.classList.add("plano")
+        titulocrew.classList.add('ocultar')
+        navmob.classList.add("mostrar")
+        nav.classList.add('plano-nav')
+    }
 }
 
 
