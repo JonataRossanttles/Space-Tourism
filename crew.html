@@ -129,6 +129,8 @@ let hamburguer = document.getElementsByClassName("hamburguer")[0]
 let titulocrew= document.getElementsByClassName("container-titulo-crew")[0]
 let navmob = document.getElementsByClassName("menu-mobile")[0]
 let nav = document.getElementsByTagName("nav")[0]
+let background = document.getElementsByTagName("body")[0]
+let carrocel = document.getElementsByClassName('slider')[0]
 hamburguer.addEventListener("click",mostrar)
 
 
@@ -138,12 +140,16 @@ function mostrar(){
         titulocrew.classList.remove('ocultar')
         navmob.classList.remove('mostrar')
         nav.classList.remove('plano-nav')
+        carrocel.classList.remove('ocultar')
+        slider.classList.remove('ocultar')
 
     }else{
         hamburguer.classList.add("plano")
         titulocrew.classList.add('ocultar')
         navmob.classList.add("mostrar")
         nav.classList.add('plano-nav')
+        carrocel.classList.add('ocultar')
+        slider.classList.add('ocultar')
     }
 }
 
