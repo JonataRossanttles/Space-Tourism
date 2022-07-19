@@ -11,13 +11,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.macedo{
+    height: 1000px;
+}
 body{
     background-image: url("assets/crew/background-crew-desktop.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    
 }
 nav{
     display: flex;
@@ -84,19 +86,16 @@ nav{
     margin: auto auto;
     font-size: 1.3rem;
     font-weight: 100;
-    
-    
 }
 .opções-menu:hover{
     border-bottom: solid 3px white;
 }
     
 .container-titulo-crew{
-    position: absolute;
-    left: 10%;
-    top: 25%;
-    display: flex;
-
+       display: flex;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    width: 350px;
 }
 .num-crew{
     font-family: var(--var-font-titulo);
@@ -114,9 +113,9 @@ nav{
 }
 /*Configurando o carrocel*/
 .slider{
-    position: absolute;
-    bottom: 0;
-    left: 10%;
+   display: flex;
+   margin-left: 10%;
+   
     overflow: hidden;
     width: 1200px;
     height: 500px;
@@ -184,7 +183,7 @@ nav{
 /*Configurando os botões do carrocel*/
 .menu-slide{
     position: absolute;
-    margin-top: -60px;
+    margin-top: 441px;
     display: flex;
     width: 300px;
     
@@ -222,7 +221,7 @@ nav{
 /*Configurando para que os botões fiquem checados */
 .navigation-menu{
     position: absolute;
-    top: 440px;
+    top: 643px;
     display: flex;
     width: 300px;
 }
@@ -274,17 +273,17 @@ nav{
 }
 @media screen and (max-width:1370px){
     .container-titulo-crew{
-        position: absolute;
-        left: 10%;
-        top: 20%;
+        justify-content: center;
         display: flex;
+        margin-bottom: 10px;
+        margin-top: 30px;
     
     }
 
 .slider{
-   position: absolute;
-    bottom: 0;
-    left: 50%;
+    display: block;
+    margin: auto;
+    margin-left: 50%;
     transform: translateX(-50%);
     padding-top: 30px;
     overflow: hidden;
@@ -314,7 +313,7 @@ nav{
     height: 300px;
 }
 .menu-slide{
-    margin-top: -343px;
+    margin-top: 257px;
     left: 191px;
 
 }
