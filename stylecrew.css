@@ -95,7 +95,7 @@ nav{
        display: flex;
     margin-left: 10%;
     margin-bottom: 30px;
-    width: 350px;
+    
 }
 .num-crew{
     font-family: var(--var-font-titulo);
@@ -180,6 +180,7 @@ nav{
     
 }
 
+
 /*Configurando os botões do carrocel*/
 .menu-slide{
     position: absolute;
@@ -204,19 +205,23 @@ nav{
 }
 #radio1:checked ~ .slide-one{
     margin-left: 0px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #radio2:checked ~ .slide-one{
+    opacity: 0;
     margin-left: -1200px;
-    transition: 0.5s;
+    transition: 0.3s;
+    
+    
 }
+
 #radio3:checked ~ .slide-one{
     margin-left: -2400px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #radio4:checked ~ .slide-one{
     margin-left: -3600px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 /*Configurando para que os botões fiquem checados */
 .navigation-menu{
@@ -277,7 +282,7 @@ nav{
         display: flex;
         margin-bottom: 70px;
         margin-top: 70px;
-    
+        margin-left: 0;
     }
 
 .slider{
@@ -313,7 +318,7 @@ nav{
     height: 300px;
 }
 .menu-slide{
-    margin-top: 257px;
+    margin-top: -343px;
     left: 191px;
 
 }
@@ -334,19 +339,19 @@ nav{
     }
     #radio1:checked ~ .slide-one{
         margin-left: 0px;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     #radio2:checked ~ .slide-one{
         margin-left: -500px;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     #radio3:checked ~ .slide-one{
         margin-left: -1000px;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     #radio4:checked ~ .slide-one{
         margin-left: -1500px;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     
@@ -376,6 +381,15 @@ nav{
     
 }
 @media screen and (max-width:760px){
+    .container-titulo-crew{
+        justify-content: center;
+        display: flex;
+        margin-bottom: 70px;
+        margin-top: 70px;
+        margin-left: 0;
+        
+    
+    }
   
     .menu-desktop{
        display: none;
@@ -426,19 +440,19 @@ nav{
     }
 #radio1:checked ~ .slide-one{
     margin-left: 0px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #radio2:checked ~ .slide-one{
     margin-left: -340px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #radio3:checked ~ .slide-one{
     margin-left: -680px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #radio4:checked ~ .slide-one{
     margin-left: -1020px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .slide-one img, .slide img{
     margin-left: 0px;
