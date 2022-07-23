@@ -340,19 +340,19 @@ nav{
     }
      #radio1:checked ~ .slide-one{
         margin-left: 0px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     #radio2:checked ~ .slide-one{
         margin-left: -600px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     #radio3:checked ~ .slide-one{
         margin-left: -1200px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     #radio4:checked ~ .slide-one{
         margin-left: -1800px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
 }
 
