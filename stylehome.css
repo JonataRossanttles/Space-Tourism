@@ -192,7 +192,11 @@ nav{
     .container-texto-home h2, .container-texto-home h1,.container-texto-home p{
   text-align: center;
 }
+}
 @media screen and (max-width:1069px){
+    body{
+        background-image: url("assets/home/background-home-tablet.jpg");
+    }
     .hamburguer{
         display: block;
     }
@@ -200,23 +204,9 @@ nav{
         display: none;
     }
 }
-@media screen and (max-width:610px){
-    .texto-home{
-        width: 400px;
-    }
-    
-    .explore{
-        font-family: var(--var-font-titulo);
-        width: 250px;
-        height: 250px;
-        position: relative;
-        margin: auto;
-        right: 0px;
-        top: 300px;
 
-    }
-}
 @media screen and (max-width:610px){
+   
     .texto-home{
         width: 400px;
     }
@@ -233,6 +223,9 @@ nav{
     }
 }
 @media screen and (max-width: 410px){
+    body{
+        background-image: url("assets/home/background-home-mobile.jpg");
+    }
     .texto-home {
         width: 320px;
     }

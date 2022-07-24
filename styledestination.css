@@ -366,6 +366,9 @@ nav{
     }
 }
 @media screen and (max-width:620px){
+    body{
+        background-image: url("assets/destination/background-destination-tablet.jpg");
+    }
     
     .slider{
         margin:auto;
@@ -460,4 +463,12 @@ nav{
     .titulo-crew{
         font-size: 1.4rem;
     }
+
+}
+
+@media screen and (max-width:420px){
+    body{
+        background-image: url("assets/destination/background-destination-mobile.jpg");
+    }
+
 }
