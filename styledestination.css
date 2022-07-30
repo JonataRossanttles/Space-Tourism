@@ -362,6 +362,10 @@ nav{
     }
 }
 @media screen and (max-width:620px){
+    #logo {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
     
     body{
         background-image: url("assets/destination/background-destination-tablet.jpg");
@@ -464,10 +468,7 @@ nav{
 }
 
 @media screen and (max-width:420px){
-    #logo {
-        margin-top: 20px;
-        margin-left: 15px;
-    }
+ 
     body{
         background-image: url("assets/destination/background-destination-mobile.jpg");
     }
