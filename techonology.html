@@ -19,7 +19,14 @@
         <li class="opções-menu"> <a href="crew.html"> <strong> 02</strong>  Crew</a> </li>
         <li class="opções-menu">  <a href="techonology.html"> <strong>03</strong>  Technology</a> </li>
     </ul>
+    <div class="hamburguer"></div>
 </nav>
+<ul class="menu-mobile">
+    <li class="opções-menu"> <a href="index.html">  <strong> 00</strong> Home</a> </li>
+    <li class="opções-menu"> <a href="destination.html"> <strong> 01</strong>  Destination</a></li>
+    <li class="opções-menu"> <a href="crew.html"> <strong> 02</strong>  Crew</a> </li>
+    <li class="opções-menu">  <a href="techonology.html"> <strong>03</strong>  Technology</a> </li>
+</ul>
 <div class="container-titulo-crew">
 <h1 class="num-crew">03</h1> <h1 class="titulo-crew">  SPACE LAUNCH 101</h1>
 </div>
@@ -107,8 +114,29 @@
     document.getElementById("radio"+count).checked = true 
     
     }
+    let hamburguer = document.getElementsByClassName("hamburguer")[0]
+let titulocrew= document.getElementsByClassName("container-titulo-crew")[0]
+let navmob = document.getElementsByClassName("menu-mobile")[0]
+let nav = document.getElementsByTagName("nav")[0]
+let carrocel = document.getElementsByClassName('slider')[0]
+hamburguer.addEventListener("click",mostrar)
+
+
+function mostrar(){
+    if (hamburguer.classList.contains("plano")){
+        hamburguer.classList.remove('plano')
+       
+        navmob.classList.remove('mostrar')
+        nav.classList.remove('plano-nav')
+
+    }else{
+        hamburguer.classList.add("plano")
+        
+        navmob.classList.add("mostrar")
+        nav.classList.add('plano-nav')
+    }
     
-    
+}
       </script>
 
 
