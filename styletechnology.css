@@ -415,6 +415,10 @@ color: black;
     }
 }
 @media screen and (max-width:402px){
+    #logo {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
     body{
         background-image: url("assets/technology/background-technology-mobile.jpg");
     }
