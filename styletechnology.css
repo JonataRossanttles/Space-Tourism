@@ -372,6 +372,10 @@ color: black;
     }
 }
 @media screen and (max-width:602px){
+    #logo {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
     body{
         background-image: url("assets/technology/background-technology-tablet.jpg");
     }
@@ -392,12 +396,12 @@ color: black;
          width: 400px;
      }
      .menu-slide{
-         margin-top: -487px;
-         margin-left: 75px;         
+         margin-top: -488px;
+         margin-left: 62px;         
      }
      .navigation-menu{
         margin-top: 326px;
-        margin-left: 75px;
+        margin-left: 62px;
     }
 
      .slide-one img, .slide img{
@@ -418,10 +422,7 @@ color: black;
     }
 }
 @media screen and (max-width:402px){
-    #logo {
-        margin-top: 20px;
-        margin-left: 15px;
-    }
+  
     body{
         background-image: url("assets/technology/background-technology-mobile.jpg");
     }
